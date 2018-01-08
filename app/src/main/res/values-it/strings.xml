@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="title">Test QI</string>
+    <string name="question1">Domanda 1</string>
+    <string name="question1text">Inserisci il numero corretto per completare la sequenza</string>
+    <string name="text_1">1, 3, 6, 10</string>
+    <string name="hint_1">Inserisci la tua risposta)</string>
+    <string name="send1">Invia</string>
+    <string name="question2">Domanda 2</string>
+    <string name="question2text">Inserisci la lettera corretta per completare la sequenza</string>
+    <string name="text_2">a, d, g, j</string>
+    <string name="hint_2">Inserisci la tua risposta</string>
+    <string name="send2">Invia</string>
+    <string name="question3">Domanda 3</string>
+    <string name="question3text">Indica il simbolo corretto per completare la sequenza</string>
+    <string name="question4">Domanda 4</string>
+    <string name="question4text">Indica il simbolo corretto per completare la sequenza</string>
+    <string name="question5">Domanda 5</string>
+    <string name="question5text">Indica il simbolo corretto per completare la sequenza</string>
+    <string name="question6text">Indica il simbolo corretto per completare la sequenza</string>
+    <string name="question7text">Indica il simbolo corretto per completare la sequenza</string>
+    <string name="question6">Domanda 6</string>
+    <string name="question7">Domanda 7</string>
+    <string name="question8">Domanda 8</string>
+    <string name="question9">Domanda 9</string>
+    <string name="question10">Domanda 10</string>
+    <string name="restart">Ripeti il Quiz</string>
+    <string name="question8text">In ogni analogia, mancano 2 dei 4 elementi. Seleziona due dei 5 simboli sulla destra (a, b, c, d, e) che hanno lo stesso rapporto dei due simboli mostrati</string>
+    <string name="question9text">In ogni analogia, mancano 2 dei 4 elementi. Seleziona due dei 5 simboli sulla destra (a, b, c, d, e) che hanno lo stesso rapporto dei due simboli mostrati</string>
+    <string name="question10text">Indica tra i simboli sulla destra (a, b, c, d) quello da inserire nello spazio vuoto della serie a sinistra</string>
+</resources>
