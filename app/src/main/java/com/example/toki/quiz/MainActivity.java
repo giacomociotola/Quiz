@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -303,8 +304,8 @@ public class MainActivity extends AppCompatActivity {
         String message = "You've finished the QI test.";
         message = message + "\nCongratulations!";
         message = message + "\nYour score is " + points + "/100";
-
-        printMessage (message);
+        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_LONG).show();
+        // printMessage (message);
 
     }
 
@@ -312,10 +313,10 @@ public class MainActivity extends AppCompatActivity {
      * Method to print the input message
      * @param message
      */
-    public void printMessage (String message) {
-        TextView textView = (TextView) findViewById(R.id.results);
-        textView.setText(message);
-    }
+    // public void printMessage (String message) {
+       //  TextView textView = (TextView) findViewById(R.id.results);
+        // textView.setText(message);
+    // }
 
     /**
      * Method to restart the quiz
@@ -324,6 +325,10 @@ public class MainActivity extends AppCompatActivity {
     public void restart (View view) {
         EditText text1 = (EditText) findViewById(R.id.answer1);
         text1.setText("");
+        Button send1 = (Button) findViewById(R.id.send1);
+        send1.setEnabled(true);
+        Button send2 = (Button) findViewById(R.id.send2);
+        send2.setEnabled(true);
         EditText text2 = (EditText) findViewById(R.id.answer2);
         text2.setText("");
         RadioGroup radioGroup3 = (RadioGroup) findViewById(R.id.radioGroupQ3);
