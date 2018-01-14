@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Quiz</string>
-    <string name="title">QI Test</string>
+    <string name="title">IQ Test</string>
     <string name="question1">Question 1</string>
     <string name="question1text">Enter the right number to complete the sequence</string>
     <string name="text_1">1, 3, 6, 10 </string>
@@ -12,21 +12,46 @@
     <string name="hint_2">Enter your answer</string>
     <string name="send2">Send</string>
     <string name="question3">Question 3</string>
+    <string name="quiz3">Quiz 3 image</string>
+    <string name="answ3">Answer 3 image</string>
     <string name="question3text">Enter the right symbol to complete the sequence</string>
     <string name="question4">Question 4</string>
+    <string name="quiz4">Quiz 4 image</string>
+    <string name="answ4">Answer 4 image</string>
     <string name="question4text">Enter the right symbol to complete the sequence</string>
     <string name="question5">Question 5</string>
+    <string name="quiz5">Quiz 5 image</string>
+    <string name="answ5">Answer 5 image</string>
     <string name="question5text">Enter the right symbol to complete the sequence</string>
     <string name="question6">Question 6</string>
+    <string name="quiz6">Quiz 6 image</string>
+    <string name="answ6">Answer 6 image</string>
     <string name="question6text">Enter the right symbol to complete the sequence</string>
     <string name="question7">Question 7</string>
+    <string name="quiz7">Quiz 7 image</string>
+    <string name="answ7">Answer 7 image</string>
     <string name="question7text">Enter the right symbol to complete the sequence</string>
     <string name="question8">Question 8</string>
+    <string name="quiz8">Quiz 8 image</string>
+    <string name="answ8">Answer 8 image</string>
     <string name="question8text">In every analogy, 2 of the 4 elements are missing. Indicate 2 of the 5 symbols on the right (a, b, c, d, e) that have the same ratio as the 2 symbols shown on the left</string>
     <string name="question9">Question 9</string>
+    <string name="quiz9">Quiz 9 image</string>
+    <string name="answ9">Answer 9 image</string>
     <string name="question9text">In every analogy, 2 of the 4 elements are missing. Indicate 2 of the 5 symbols on the right (a, b, c, d, e) that have the same ratio as the 2 symbols shown on the left</string>
     <string name="question10">Question 10</string>
+    <string name="quiz10">Quiz 10 image</string>
+    <string name="answ10">Answer 10 image</string>
+    <string name="a" translatable="false">a</string>
+    <string name="b" translatable="false">b</string>
+    <string name="c" translatable="false">c</string>
+    <string name="d" translatable="false">d</string>
     <string name="question10text">Indicate between the symbols on the right (a, b, c, d) the one to be inserted in the empty space of the series on the left</string>
+    <string name="results">View Results</string>
+    <string name="finish">You\'ve finished the QI test.</string>
+    <string name="congrat">Congratulations!</string>
+    <string name="score">Your score is </string>
+    <string name="fraction" translatable="false">/100</string>
     <string name="restart">Restart Quiz</string>
 
 </resources>

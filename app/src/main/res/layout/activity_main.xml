@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,11 +7,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/test_iq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -53,19 +53,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
                 android:layout_weight="6"
                 android:hint="@string/hint_1"
                 android:inputType="number"
                 android:textSize="14sp" />
-
-            <Button
-                android:id="@+id/send1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textAllCaps="true"
-                android:text="@string/send1"
-                android:onClick="sendAnswer1"/>
 
         </LinearLayout>
 
@@ -105,15 +97,8 @@
                 android:layout_weight="6"
                 android:hint="@string/hint_2"
                 android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
                 android:textSize="14sp" />
-            <Button
-                android:id="@+id/send2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textAllCaps="true"
-                android:text="@string/send2"
-                android:onClick="sendAnswer2"/>
 
         </LinearLayout>
 
@@ -140,17 +125,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz3"
                 android:src="@drawable/q3img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ3"
                     android:src="@drawable/a3" />
 
                 <RadioGroup
@@ -215,17 +203,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz4"
                 android:src="@drawable/q4img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ4"
                     android:src="@drawable/a4" />
 
                 <RadioGroup
@@ -292,17 +283,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz5"
                 android:src="@drawable/q5img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ5"
                     android:src="@drawable/a5" />
 
                 <RadioGroup
@@ -369,17 +363,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz6"
                 android:src="@drawable/q6img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ6"
                     android:src="@drawable/a6" />
 
                 <RadioGroup
@@ -446,17 +443,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz7"
                 android:src="@drawable/q7img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ7"
                     android:src="@drawable/a7" />
 
                 <RadioGroup
@@ -523,17 +523,20 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz8"
                 android:src="@drawable/q8img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ8"
                     android:src="@drawable/a8" />
 
                 <LinearLayout
@@ -545,36 +548,31 @@
                         android:id="@+id/check_81"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox8_clicked"/>
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_82"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox8_clicked"/>
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_83"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox8_clicked"/>
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_84"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox8_clicked"/>
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_85"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox8_clicked"/>
+                        android:layout_weight="1" />
 
                 </LinearLayout>
 
@@ -606,17 +604,20 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz9"
                 android:src="@drawable/q9img" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ9"
                     android:src="@drawable/a9" />
 
                 <LinearLayout
@@ -628,36 +629,31 @@
                         android:id="@+id/check_91"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox9_clicked" />
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_92"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox9_clicked" />
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_93"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox9_clicked" />
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_94"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox9_clicked" />
+                        android:layout_weight="1" />
 
                     <CheckBox
                         android:id="@+id/check_95"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="onCheckBox9_clicked" />
+                        android:layout_weight="1" />
 
                 </LinearLayout>
 
@@ -688,17 +684,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/quiz10"
                 android:src="@drawable/q10img" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/answ10"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/a10" />
 
@@ -714,7 +713,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="a"
+                        android:text="@string/a"
                         android:onClick="radioQ10" />
 
                     <RadioButton
@@ -722,7 +721,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="b"
+                        android:text="@string/b"
                         android:onClick="radioQ10" />
 
                     <RadioButton
@@ -730,7 +729,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="c"
+                        android:text="@string/c"
                         android:onClick="radioQ10" />
 
                     <RadioButton
@@ -738,7 +737,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="d"
+                        android:text="@string/d"
                         android:onClick="radioQ10" />
 
 
@@ -753,7 +752,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:text="View Results"
+            android:text="@string/results"
             android:onClick="results"/>
 
         <TextView

@@ -29,4 +29,24 @@
     <string name="question8text">In ogni analogia, mancano 2 dei 4 elementi. Seleziona due dei 5 simboli sulla destra (a, b, c, d, e) che hanno lo stesso rapporto dei due simboli mostrati</string>
     <string name="question9text">In ogni analogia, mancano 2 dei 4 elementi. Seleziona due dei 5 simboli sulla destra (a, b, c, d, e) che hanno lo stesso rapporto dei due simboli mostrati</string>
     <string name="question10text">Indica tra i simboli sulla destra (a, b, c, d) quello da inserire nello spazio vuoto della serie a sinistra</string>
+    <string name="finish">Hai finito il QI test</string>
+    <string name="congrat">Congratulazioni!</string>
+    <string name="score">"Il tuo punteggio è "</string>
+    <string name="quiz3">Immagine quiz 3</string>
+    <string name="quiz4">Immagine quiz 4</string>
+    <string name="quiz5">Immagine quiz 5</string>
+    <string name="quiz6">Immagine quiz 6</string>
+    <string name="quiz7">Immagine quiz 7</string>
+    <string name="quiz8">Immagine quiz 8</string>
+    <string name="quiz9">Immagine quiz 9</string>
+    <string name="quiz10">Immagine quiz 10</string>
+    <string name="results">Vedi risultati</string>
+    <string name="answ3">Immagine risposta 3</string>
+    <string name="answ4">Immagine risposta 4</string>
+    <string name="answ5">Immagine risposta 5</string>
+    <string name="answ6">Immagine risposta 6</string>
+    <string name="answ7">Immagine risposta 7</string>
+    <string name="answ8">Immagine risposta 8</string>
+    <string name="answ9">Immagine risposta 9</string>
+    <string name="answ10">Immagine risposta 10</string>
 </resources>

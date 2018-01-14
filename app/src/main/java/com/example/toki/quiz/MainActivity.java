@@ -3,60 +3,60 @@ package com.example.toki.quiz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Definition of two arrays for quizzes 8 and 9
+    CheckBox[] cb8;
+    CheckBox[] cb9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Assignment of values to quiz 8 array
+        cb8 = new CheckBox[]{
+                (CheckBox)findViewById(R.id.check_81),
+                (CheckBox)findViewById(R.id.check_82),
+                (CheckBox)findViewById(R.id.check_83),
+                (CheckBox)findViewById(R.id.check_84),
+                (CheckBox)findViewById(R.id.check_85)
+        };
+
+        // Assignment of values to quiz 9 array
+        cb9 = new CheckBox[]{
+                (CheckBox)findViewById(R.id.check_91),
+                (CheckBox)findViewById(R.id.check_92),
+                (CheckBox)findViewById(R.id.check_93),
+                (CheckBox)findViewById(R.id.check_94),
+                (CheckBox)findViewById(R.id.check_95)
+        };
+
+        // here set onChechedChange for all checkboxes
+        for (CheckBox cb:cb8) {
+            cb.setOnCheckedChangeListener(cb8Listener);
+        }
+
+        // here set onChechedChange for all checkboxes
+
+        for (CheckBox cb:cb9) {
+            cb.setOnCheckedChangeListener(cb9Listener);
+        }
     }
 
-    /**
-     * Global variable counting total points of the quiz
-     */
+    // Global variable counting total points of the quiz
     public int points = 0;
 
     /**
-     *
-     * @param view
-     */
-    public void sendAnswer1 (View view) {
-        Button send1 = (Button) findViewById(R.id.send1);
-        EditText answer_1 = (EditText) findViewById(R.id.answer1);
-        String ans1 = answer_1.getText().toString();
-        if (ans1.equalsIgnoreCase("15")) {
-            points += 10;
-        }
-        send1.setEnabled(false);  // disable button
-    }
-
-    /**
-     *
-     * @param view
-     */
-    public void sendAnswer2 (View view) {
-        Button send2 = (Button) findViewById(R.id.send2);
-        EditText answer_2 = (EditText) findViewById(R.id.answer2);
-        String ans2 = answer_2.getText().toString();
-        if (ans2.equalsIgnoreCase("m")) {
-            points = points + 10;
-        }
-        send2.setEnabled(false);  // disable button
-    }
-
-
-
-    /**
      * Method to check the answer to the question n. 3
-     * @param view
+     * @param view - the RadioGroup of quiz 3
      */
      public void radioQ3 (View view) {
         // Is the button now checked?
@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_31:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_32:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_33:
                 if (checked)
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
             case R.id.radio_34:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
         }
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to check the answer to the question n. 4
-     * @param view
+     * @param view - the RadioGroup of quiz 4
      */
     public void radioQ4 (View view) {
         // Is the button now checked?
@@ -96,11 +96,11 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_41:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_42:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_43:
                 if (checked)
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.radio_44:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
         }
 
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to check the answer to the question n. 5
-     * @param view
+     * @param view - the RadioGroup of quiz 5
      */
     public void radioQ5 (View view) {
         // Is the button now checked?
@@ -126,15 +126,15 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_51:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_52:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_53:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                 break;
             case R.id.radio_54:
                 if (checked)
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to check the answer to the question n. 6
-     * @param view
+     * @param view - the RadioGroup of quiz 6
      */
     public void radioQ6 (View view) {
         // Is the button now checked?
@@ -155,11 +155,11 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_61:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_62:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_63:
                 if (checked)
@@ -167,14 +167,14 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.radio_64:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
         }
     }
 
     /**
      * Method to check the answer to the question n. 7
-     * @param view
+     * @param view - the RadioGroup of quiz 7
      */
     public void radioQ7 (View view) {
         // Is the button now checked?
@@ -184,15 +184,15 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_71:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_72:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_73:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                 break;
             case R.id.radio_74:
                 if (checked)
@@ -202,92 +202,67 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Method to check the answer to the question n. 8
-     * @param view
+     * The Listener for CheckBox array 8
      */
-    public void onCheckBox8_clicked (View view) {
-        // Is the button now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.check_81:
-                if (checked)
-                    points += 5;
-                    break;
-            case R.id.check_82:
-                if (checked)
-                    // risposta errata
-                    break;
-            case R.id.check_83:
-                if (checked)
-                    // risposta errata
-                    break;
-            case R.id.check_84:
-                if (checked)
-                    points += 5;
-                break;
-            case R.id.check_85:
-                if (checked)
-                    // risposta errata
-                break;
+    CompoundButton.OnCheckedChangeListener cb8Listener = new CompoundButton.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            checkEnoughAndMakeDisabled(cb8);
         }
-    }
+    };
 
     /**
-     * Method to check the answer to the question n. 9
-     * @param view
+     * The Listener for CheckBox array 9
      */
-    public void onCheckBox9_clicked (View view) {
-        // Is the button now checked?
-        boolean checked = ((CheckBox) view).isChecked();
+    CompoundButton.OnCheckedChangeListener cb9Listener = new CompoundButton.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            checkEnoughAndMakeDisabled(cb9);
+        }
+    };
 
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.check_91:
-                if (checked)
-                    points += 5;
-                break;
-            case R.id.check_92:
-                if (checked)
-                    // risposta errata
-                    break;
-            case R.id.check_93:
-                if (checked)
-                    // risposta errata
-                    break;
-            case R.id.check_94:
-                if (checked)
-                    points += 5;
-                break;
-            case R.id.check_95:
-                if (checked)
-                    // risposta errata
-                    break;
+    /**
+     *
+     * @param checkBoxes - the CheckBox arrays 8 and 9
+     */
+    private void checkEnoughAndMakeDisabled(CheckBox checkBoxes[]){
+        int countChecked =0;
+        for (CheckBox cb:checkBoxes){
+            cb.setEnabled(true);
+            if (cb.isChecked()) countChecked++;
+        }
+
+        // Setting the value for the max number of checked boxes
+        int a = 2;
+        if (a <= countChecked) {
+            for (CheckBox cb:checkBoxes){
+                if (!cb.isChecked())cb.setEnabled(false);
+            }
         }
     }
 
     /**
      * Method to check the answer to the question n. 10
-     * @param view
+     * @param view - the RadioGroup of quiz 10
      */
     public void radioQ10 (View view) {
-        // Is the button now checked?
+
+        // Check if the button is now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.radio_101:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_102:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                     break;
             case R.id.radio_103:
                 if (checked)
-                    // risposta errata
+                    // failing answer
                 break;
             case R.id.radio_104:
                 if (checked)
@@ -298,37 +273,61 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Method to calculate the total score and create the final message
-     * param view
+     * @param view - The View Results button
      */
     public void results (View view) {
-        String message = "You've finished the QI test.";
-        message = message + "\nCongratulations!";
-        message = message + "\nYour score is " + points + "/100";
-        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_LONG).show();
-        // printMessage (message);
+        EditText answer_1 = (EditText) findViewById(R.id.answer1);
+        String ans1 = answer_1.getText().toString();
+        if (ans1.equalsIgnoreCase("15")) {
+            points += 10;
+        }
+
+        EditText answer_2 = (EditText) findViewById(R.id.answer2);
+        String ans2 = answer_2.getText().toString();
+        if (ans2.equalsIgnoreCase("m")) {
+            points = points + 10;
+        }
+
+        if (cb8[0].isChecked()){
+            points +=5;
+        }
+
+        if (cb8[3].isChecked()){
+            points +=5;
+        }
+
+        if (cb9[0].isChecked()){
+            points +=5;
+        }
+
+        if (cb9[3].isChecked()){
+            points +=5;
+        }
+
+        String message = getString(R.string.finish) + "\n";
+        message = message + getString(R.string.congrat) + "\n";
+        message = message + getString(R.string.score) + points + getString(R.string.fraction);
+
+        printMessage (message);
 
     }
 
     /**
      * Method to print the input message
-     * @param message
+     * @param message - the string passed from caller
      */
-    // public void printMessage (String message) {
-       //  TextView textView = (TextView) findViewById(R.id.results);
-        // textView.setText(message);
-    // }
+    public void printMessage (String message) {
+        TextView textView = (TextView) findViewById(R.id.results);
+        textView.setText(message);
+    }
 
     /**
      * Method to restart the quiz
-     * @param view
+     * @param view - The Restart Quiz button
      */
     public void restart (View view) {
         EditText text1 = (EditText) findViewById(R.id.answer1);
         text1.setText("");
-        Button send1 = (Button) findViewById(R.id.send1);
-        send1.setEnabled(true);
-        Button send2 = (Button) findViewById(R.id.send2);
-        send2.setEnabled(true);
         EditText text2 = (EditText) findViewById(R.id.answer2);
         text2.setText("");
         RadioGroup radioGroup3 = (RadioGroup) findViewById(R.id.radioGroupQ3);
@@ -366,6 +365,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.results);
         textView.setText("");
         text1.requestFocus();
+        points = 0;
     }
 
 }
