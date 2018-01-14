@@ -4,8 +4,8 @@ QI Test
 This is a QI Test, realized following some real tests of Mensa International.
 
 I created 10 questions, using the following views:
-Question 1: the answer must be written in an EditText view, and confirmed with a Send button. The TextView type is "number".
-Question 2: the answer must be written in an EditText view, and confirmed with a Send button. The TextView type is "text".
+Question 1: the answer must be written in an EditText view. The TextView type is "number".
+Question 2: the answer must be written in an EditText view. The TextView type is "text".
 Questions 3, 4, 5, 6, 7, 10: the answer must be chosen between 4 radio buttons.
 Questions 8, 9: you have to select 2 answer, among 5; so I used 5 CheckBoxes.
 
